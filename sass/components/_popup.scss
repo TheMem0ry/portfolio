@@ -63,6 +63,7 @@
     @include respond(tab-port) {
       width: 95vw;
       padding-top: 3rem;
+      top: 40%;
     }
   }
 
@@ -93,6 +94,10 @@
       & p {
         text-align: left;
       }
+
+      & .heading-secondary {
+        margin-top: 0.5rem;
+      }
     }
   }
 
@@ -104,6 +109,10 @@
       display: inline-block;
       width: 49%;
       height: 100%;
+
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
     }
   }
 
