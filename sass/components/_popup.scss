@@ -31,8 +31,8 @@
     &:link,
     &:visited {
       position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
+      top: 1.5rem;
+      right: 1.5rem;
       font-size: 3rem;
       text-decoration: none;
       display: inline-block;
@@ -59,11 +59,23 @@
     opacity: 0;
     transform: scale(0.5);
     transition: all 0.4s 0.2s;
+
+    @include respond(tab-port) {
+      width: 95vw;
+      padding-top: 3rem;
+    }
   }
 
   &__left {
     width: 33.3333333%;
     display: table-cell;
+    @include respond(tab-port) {
+      display: block;
+      width: 100%;
+      height: 20rem;
+      text-align: center;
+      padding: 3rem 3rem 1rem 3rem;
+    }
   }
 
   &__right {
@@ -71,11 +83,28 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      display: block;
+      width: 100%;
+      padding: 1rem 5rem 3rem 5rem;
+      text-align: center;
+
+      & p {
+        text-align: left;
+      }
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tab-port) {
+      display: inline-block;
+      width: 49%;
+      height: 100%;
+    }
   }
 
   &__text {
