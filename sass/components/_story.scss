@@ -51,13 +51,13 @@
     transition: all 0.5s;
   }
 
-  &__text {
-    transform: skewX(12deg);
+  // &__text {
+  //   // transform: skewX(12deg); //causes text to blure. It's better without it
 
-    @include respond(phone) {
-      transform: skewX(0);
-    }
-  }
+  //   // @include respond(phone) {
+  //   //   transform: skewX(0);
+  //   // }
+  // }
 
   &__caption {
     position: absolute;
